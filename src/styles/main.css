@@ -1,0 +1,38 @@
+@import url("./colors.css");
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(#ABB2BF, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(#ABB2BF, 0.6);
+}
+
+body {
+    background-color: var(--color-primary);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    font-family: "Roboto";
+}
+
+a {
+    text-decoration: none;
+}
+
+.snackbar {
+    --mdc-snackbar-container-color: var(--color-secondary);
+    --mdc-snackbar-supporting-text-color: var(--color-text-primary);
+    --mdc-snackbar-supporting-text-font: "Roboto";
+    --mdc-snackbar-supporting-text-size: 15px
+}

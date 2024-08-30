@@ -1,0 +1,31 @@
+---
+import "../styles/nav_rail.css"
+import NavRailItem from "./NavRailItem.astro"
+import ThemeModeItem from "./ThemeModeItem.astro"
+---
+
+<div class="nav_rail_container">
+    <nav class="nav_rail">
+        <div class="nav_profile_info_container">
+            <img src="/images/avatar.jpg" class="profile_img"/>
+            <div class="profile_description_content">
+                <p class="profile_name">Daniel Blas</p>
+                <p class="profile_description">Android Developer</p>
+            </div>
+        </div>
+
+        <div class="nav_item_divider"></div>
+
+        <NavRailItem iconPath="/images/ic_about_me.svg" label="About Me"/>
+        <NavRailItem iconPath="/images/ic_skills.svg" label="Skills"/>
+        <NavRailItem iconPath="/images/ic_experience.svg" label="Experience"/>
+        <NavRailItem iconPath="/images/ic_projects.svg" label="Projects"/>
+
+        <ThemeModeItem/>
+
+        <div class="nav_item_divider"></div>
+
+        <img src="/images/ic_dr10.svg" class="nav_logo"/>
+
+    </nav>
+</div>

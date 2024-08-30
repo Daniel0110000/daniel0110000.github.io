@@ -1,0 +1,15 @@
+---
+interface Props {
+    iconPath: string,
+    label: string
+}
+
+const {iconPath, label} = Astro.props;
+
+import "../styles/nav_rail_item.css"
+---
+
+<div class="nav_item_container">
+    <img src={iconPath} class="item_icon"/>
+    <p class="item_label">{label}</p>
+</div>

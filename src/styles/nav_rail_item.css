@@ -1,0 +1,29 @@
+@import url("./colors.css");
+
+.nav_item_container {
+    width: 90%;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+
+.item_icon {
+    width: 23px;
+    height: 23px;
+    margin-left: 10px;
+}
+
+.item_label {
+    color: var(--color-text-primary);
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.nav_item_container:hover {
+    background: rgb(31, 33, 37);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}

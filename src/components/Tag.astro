@@ -1,0 +1,15 @@
+---
+interface Props {
+    tag_icon: string,
+    tag_label: string
+}
+
+const {tag_icon, tag_label} = Astro.props;
+
+import "../styles/tag.css"
+---
+
+<div class="tag">
+    <img src={tag_icon} class="tag_icon"/>
+    <p class="tag_title">{tag_label}</p>
+</div>

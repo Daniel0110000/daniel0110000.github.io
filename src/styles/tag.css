@@ -1,0 +1,23 @@
+.tag {
+    height: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: var(--color-secondary);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tag_icon {
+    width: 20px;
+    height: 20px;
+}
+
+.tag_title {
+    color: var(--color-text-primary);
+    margin-left: 5px;
+    font-size: 15px;
+}

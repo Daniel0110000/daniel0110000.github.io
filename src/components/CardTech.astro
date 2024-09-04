@@ -1,0 +1,15 @@
+---
+interface Props {
+    iconPath: string,
+    label: string
+}
+
+const {iconPath, label} = Astro.props;
+
+import "../styles/card_tech.css"
+---
+
+<div class="card_tech">
+    <img src={iconPath} class="tech_icon"/>
+    <p class="tech_name">{label}</p>
+</div>

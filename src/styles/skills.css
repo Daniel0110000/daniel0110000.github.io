@@ -1,0 +1,18 @@
+.skills_section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.skills_header_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.skills_title {
+    color: var(--color-complementary);
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 5px;
+}

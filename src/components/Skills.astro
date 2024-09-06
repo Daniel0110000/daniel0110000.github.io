@@ -1,0 +1,23 @@
+---
+import "../styles/skills.css"
+import SkillsContainer from "./SkillsContainer.astro"
+import SkillsData from "../data/Skills.json"
+import SkillsAndroidLibs from "./SkillsAndroidLibs.astro"
+---
+
+<section class="skills_section">
+    <div class="skills_header_section">
+        <img src="/images/ic_skillsets.svg"/>
+        <p class="skills_title">My Skillsets</p>
+    </div>
+
+    <SkillsContainer sectionIcon="/images/ic_languajes.svg" sectionTitle="Programming Languages" skills={SkillsData.languages}/>
+    <SkillsContainer sectionIcon="/images/ic_frameworks.svg" sectionTitle="Frameworks" skills={SkillsData.frameworks}/>
+    <SkillsContainer sectionIcon="/images/ic_databases.svg" sectionTitle="Databases" skills={SkillsData.databases}/>
+    <SkillsContainer sectionIcon="/images/ic_dev_tools.svg" sectionTitle="Development Tools" skills={SkillsData.dev_tools}/>
+    <SkillsContainer sectionIcon="/images/ic_ides.svg" sectionTitle="Integrated Development Environments (IDEs)" skills={SkillsData.ides}/>
+    <SkillsContainer sectionIcon="/images/ic_design_tools.svg" sectionTitle="Design Tools" skills={SkillsData.design_tools}/>
+
+    <SkillsAndroidLibs skills={SkillsData.android_libraries}/>
+
+</section>

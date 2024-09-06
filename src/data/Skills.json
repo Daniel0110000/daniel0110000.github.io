@@ -1,0 +1,58 @@
+{
+    "languages": [
+        { "label": "Kotlin", "iconPath": ""},
+        { "label": "Java", "iconPath": ""},
+        { "label": "C++", "iconPath": ""},
+        { "label": "Rust", "iconPath": ""},
+        { "label": "Kotlin", "iconPath": ""},
+        { "label": "Java", "iconPath": ""},
+        { "label": "C++", "iconPath": ""},
+        { "label": "Rust", "iconPath": ""},
+        { "label": "C++", "iconPath": ""},
+        { "label": "Rust", "iconPath": ""}
+    ],
+    "frameworks": [
+        { "label": "Jetpack Compose", "iconPath": ""},
+        { "label": "Angular", "iconPath": ""},
+        { "label": "Spring Boot", "iconPath": ""},
+        { "label": "Swing", "iconPath": ""},
+        { "label": "Spring Boot", "iconPath": ""},
+        { "label": "Swing", "iconPath": ""}
+    ],
+    "databases": [
+        { "label": "Firebase", "iconPath": ""},
+        { "label": "MySQL", "iconPath": ""},
+        { "label": "SQLite", "iconPath": ""}
+    ],
+    "dev_tools": [
+        { "label": "Git", "iconPath": ""},
+        { "label": "Github", "iconPath": ""},
+        { "label": "NPM", "iconPath": ""}
+    ],
+    "ides": [
+        { "label": "Android Studio", "iconPath": ""},
+        { "label": "VS Code", "iconPath": ""},
+        { "label": "Neovim", "iconPath": ""},
+        { "label": "VS Code", "iconPath": ""},
+        { "label": "Neovim", "iconPath": ""}
+    ],
+    "design_tools": [
+        { "label": "Figma", "iconPath": ""},
+        { "label": "Canva", "iconPath": ""},
+        { "label": "Blender", "iconPath": ""}
+    ],
+    "android_libraries": [
+        { "label": "Retrofit", "iconPath": ""},
+        { "label": "Volley", "iconPath": ""},
+        { "label": "ROOM", "iconPath": ""},
+        { "label": "Mockk", "iconPath": ""},
+        { "label": "Retrofit", "iconPath": ""},
+        { "label": "Volley", "iconPath": ""},
+        { "label": "ROOM", "iconPath": ""},
+        { "label": "Mockk", "iconPath": ""},
+        { "label": "Retrofit", "iconPath": ""},
+        { "label": "Volley", "iconPath": ""},
+        { "label": "ROOM", "iconPath": ""},
+        { "label": "Mockk", "iconPath": ""}
+    ]
+}

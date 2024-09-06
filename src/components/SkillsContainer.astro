@@ -1,0 +1,31 @@
+---
+interface Skill {
+    label: string,
+    iconPath: string
+}
+
+interface Props {
+    sectionIcon: string,
+    sectionTitle: string,
+    skills: Skill[]
+}
+
+const {sectionIcon, sectionTitle, skills} = Astro.props;
+
+import "../styles/skills_container.css"
+import SkillCard from "./SkillCard.astro";
+---
+
+<div class="skills_container">
+    <div class="skills_header">
+        <img src={sectionIcon}/>
+        <p class="skills_header_title">{sectionTitle}</p>
+    </div>
+    <div class="skills">
+        {
+            skills.map((skill) => (
+                <SkillCard skillTitle={skill.label}/>
+            ))
+        }
+    </div>
+</div>

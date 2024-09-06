@@ -1,0 +1,24 @@
+.skills_container {
+    margin-top: 25px;
+}
+
+.skills_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.skills_header_title {
+    color: var(--color-text-primary);
+    font-size: 17px;
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+}

@@ -5,7 +5,6 @@
     align-items: center;
     background: var(--color-secondary);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    cursor: pointer;
     border-radius: 8px;
     padding-left: 10px;
     padding-right: 10px;

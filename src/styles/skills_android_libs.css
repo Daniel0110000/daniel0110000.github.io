@@ -1,0 +1,21 @@
+.android_libs_header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.a_libs_header_title {
+    color: var(--color-text-primary);
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 3px;
+}
+
+.android_libs_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}

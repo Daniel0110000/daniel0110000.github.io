@@ -1,0 +1,27 @@
+---
+interface Skill {
+    label: string,
+    iconPath: string
+}
+
+interface Props {
+    skills: Skill[]
+}
+
+const {skills} = Astro.props;
+
+import Tag from "./Tag.astro";
+import "../styles/skills_android_libs.css"
+---
+
+<div class="android_libs_header">
+    <img src="/images/ic_android_libs.svg" class="a_lib_header_icon"/>
+    <p class="a_libs_header_title">Android Libraries</p>       
+</div>
+<div class="android_libs_container">
+    {
+        skills.map((skill) => (
+            <Tag tag_label={skill.label} tag_icon="/images/ic_android.svg"/>
+        ))
+    }
+</div>

@@ -1,5 +1,3 @@
-@import url("./colors.css");
-
 .nav_rail_container {
     height: 100%;
     display: flex;
@@ -67,4 +65,30 @@
     width: 40px;
     height: 40px;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 750px) {
+
+    .nav_rail_container {
+        width: 100%;
+        height: max-content;
+        position: fixed;
+        z-index: 5;
+        bottom: 0;
+    }
+
+    .nav_rail {
+        width: 100%;
+        height: 55px;
+        flex-direction: row;
+        justify-content: space-evenly;
+        border-radius: 20px 20px 0px 0px;
+        margin: 0px;
+    }
+
+    .nav_item_divider, .nav_profile_info_container, .nav_logo {
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
+    }
 }

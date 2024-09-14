@@ -79,3 +79,11 @@ input:checked+.slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+@media screen and (max-width: 750px) {
+  .theme_mode_container {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
+}

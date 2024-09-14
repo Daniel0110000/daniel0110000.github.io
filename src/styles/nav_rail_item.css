@@ -27,3 +27,41 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     cursor: pointer;
 }
+
+@media screen and (max-width: 750px) {
+    
+    .nav_item_container {
+        width: 150px;
+        height: max-content;
+        flex-direction: column;
+    }
+
+    .nav_selection_indicator {
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px;
+    }
+
+    .nav_selection_indicator:hover {
+        background: rgb(31, 33, 37);    
+    }
+
+    .item_icon {
+        margin: 0px;
+    }
+
+    .item_label {
+        margin: 0px;
+        margin-top: 5px;
+        font-size: 12px;
+    }
+
+    .nav_item_container:hover {
+        background: none;
+        border: none;
+        cursor: none;
+    }
+
+}

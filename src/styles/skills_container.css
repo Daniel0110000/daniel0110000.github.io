@@ -20,5 +20,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px 15px;
+}
+
+@media screen and (max-width: 750px) {
+    .skills_header_title {
+        font-size: 15px;
+    }
 }

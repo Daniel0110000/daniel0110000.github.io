@@ -77,3 +77,13 @@
     font-size: 14px;
     padding: 0px 10px 30px 10px;
 }
+
+@media screen and (max-width: 750px) {
+    .project_actions {
+        width: 90%;
+    }
+
+    .project_card {
+        width: 100%;
+    }
+}

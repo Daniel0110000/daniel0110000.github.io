@@ -24,6 +24,17 @@ main {
     border-radius: 10px;
 }
 
-.big_space {
-    height: 1000px;
+@media screen and (max-width: 750px) {
+    .main_container {
+        width: 90%;
+    }
+
+    .banner {
+        width: 100%;
+        height: 130px;
+    }
+
+    .section_divider {
+        width: 90%;
+    }
 }

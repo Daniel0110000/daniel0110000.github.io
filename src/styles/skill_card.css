@@ -22,3 +22,20 @@
     text-align: center;
     margin-top: 5px;
 }
+
+@media screen and (max-width: 750px) {
+
+    .skill_card {
+        width: 80px;
+        height: 80px;
+    }
+
+    .skill_icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .skill_title {
+        font-size: 12px;
+    }
+}

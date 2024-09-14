@@ -1,0 +1,15 @@
+---
+interface Props {
+    icon_path: string,
+    title: string
+}
+
+const {icon_path, title} = Astro.props
+
+import "../styles/section_header.css"
+---
+
+<div class="section_header">
+    <img src={icon_path} class="section_icon"/>
+    <p class="section_title">{title}</p>
+</div>

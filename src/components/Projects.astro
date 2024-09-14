@@ -1,13 +1,11 @@
 ---
 import "../styles/projects.css"
 import Project from "./Project.astro"
+import SectionHeader from "./SectionHeader.astro"
 ---
 
 <section class="projects_section">
-    <div class="projects_header_container">
-        <img src="/images/ic_projects_section.svg" class="projects_icon"/>
-        <p class="projects_title">Projects</p>
-    </div>
+    <SectionHeader icon_path="/images/ic_projects_s.svg" title="Projects"/>
 
     <div class="projects_container">
         <Project/>

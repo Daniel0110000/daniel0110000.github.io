@@ -43,10 +43,27 @@
 .tags_container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px 5px;
     margin-top: 10px;
 }
 
+@media screen and (max-width: 750px) {
+    .about_me_section {
+        margin-top: -45px;
+    }
 
-.tag_divider {
-    margin-left: 10px;
+    .avatar {
+        width: 90px;
+        height: 90px;
+    }
+
+    .name_container {
+        margin-top: 0px;
+    }
+
+    .name {
+        font-size: 25px;
+    }
+
 }

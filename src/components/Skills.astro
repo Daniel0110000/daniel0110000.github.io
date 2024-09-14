@@ -3,13 +3,11 @@ import "../styles/skills.css"
 import SkillsContainer from "./SkillsContainer.astro"
 import SkillsData from "../data/Skills.json"
 import SkillsAndroidLibs from "./SkillsAndroidLibs.astro"
+import SectionHeader from "./SectionHeader.astro"
 ---
 
 <section class="skills_section">
-    <div class="skills_header_section">
-        <img src="/images/ic_skillsets.svg"/>
-        <p class="skills_title">My Skillsets</p>
-    </div>
+    <SectionHeader icon_path="/images/ic_skills_s.svg" title="Skills"/>
 
     <SkillsContainer sectionIcon="/images/ic_languajes.svg" sectionTitle="Programming Languages" skills={SkillsData.languages}/>
     <SkillsContainer sectionIcon="/images/ic_frameworks.svg" sectionTitle="Frameworks" skills={SkillsData.frameworks}/>

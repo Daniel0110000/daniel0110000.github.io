@@ -28,7 +28,7 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1100px) {
     
     .nav_item_container {
         width: 150px;

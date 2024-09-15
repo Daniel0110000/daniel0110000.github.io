@@ -56,7 +56,7 @@
     margin-top: 10px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1240px) {
     .experience_card {
         width: 100%;
         height: max-content;

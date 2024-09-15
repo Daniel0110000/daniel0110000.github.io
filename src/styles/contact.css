@@ -154,7 +154,7 @@
     margin-top: 30px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 950px) {
     .contact_container {
         flex-direction: column;
         align-items: center;

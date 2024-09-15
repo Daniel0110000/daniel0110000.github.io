@@ -80,7 +80,7 @@ input:checked+.slider:before {
   border-radius: 50%;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1100px) {
   .theme_mode_container {
     width: 0px;
     height: 0px;

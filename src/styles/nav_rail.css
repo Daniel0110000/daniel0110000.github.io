@@ -67,7 +67,7 @@
     margin-top: 10px;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1100px) {
 
     .nav_rail_container {
         width: 100%;

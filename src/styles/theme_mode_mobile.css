@@ -1,0 +1,52 @@
+.theme_mode_container_mobile {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.theme_mode_container_mobile:hover {
+    background: var(--color-actions);
+}
+
+.theme_toggle {
+    display: none;
+}
+
+.theme_label {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.d_mode_icon,
+.light_mode_icon {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+    position: absolute;
+}
+
+.light_mode_icon {
+    opacity: 1;
+}
+
+.d_mode_icon {
+    opacity: 0;
+}
+
+.theme_toggle:checked + .theme_label .light_mode_icon {
+    opacity: 0;
+}
+
+.theme_toggle:checked + .theme_label .d_mode_icon {
+    opacity: 1;
+}

@@ -6,7 +6,7 @@
     align-items: center;
     border-radius: 8px;
     background: var(--color-secondary);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--color-border);
     cursor: pointer;
     margin-top: 10px;
 }
@@ -23,8 +23,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(31, 33, 37);
-    border-radius: 0px 10px 10px 0px;
+    background: var(--color-actions);
+    border-radius: 0px 8px 8px 0px;
     margin-left: 10px;
 }
 

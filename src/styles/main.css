@@ -18,8 +18,8 @@ main {
 
 .section_divider {
     width: 100%;
-    height: 2px;
-    background: var(--color-secondary);
+    height: 1px;
+    background: var(--color-section-divider);
     margin: 20px auto;
     border-radius: 10px;
 }
@@ -32,6 +32,7 @@ main {
     .banner {
         width: 100%;
         height: 130px;
+        margin-top: 55px;
     }
 
     .section_divider {

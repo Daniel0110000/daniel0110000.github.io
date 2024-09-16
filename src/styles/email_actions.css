@@ -7,7 +7,7 @@
     background-color: var(--color-secondary);
     border-radius: 8px;
     background: var(--color-secondary);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--color-border);
     margin: 20px auto;
 }
 
@@ -24,14 +24,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    background: rgb(31, 33, 37);
+    background: var(--color-actions);
     border-radius: 0px 10px 10px 0px;
 }
 
 .actions_divider {
     width: 1.2px;
     height: 90%;
-    background: rgba(255, 255, 255, 0.1);
+    background: var(--color-actions-divider);
     border-radius: 5px;
 }
 

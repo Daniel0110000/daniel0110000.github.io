@@ -1,17 +1,39 @@
 ---
 interface Props {
     iconPath: string,
-    label: string
+    label: string,
+    sectionToScroll: string
 }
 
-const {iconPath, label} = Astro.props;
+const {iconPath, label, sectionToScroll} = Astro.props;
 
 import "../styles/nav_rail_item.css"
 ---
 
-<div class="nav_item_container">
-    <div class="nav_selection_indicator">
+<div :class=`selectedSection === '${sectionToScroll}' ? 'nav_item_container_selected' : 'nav_item_container'` x-on:click=`scrollToSection('${sectionToScroll}')`>
+    <div :class=`selectedSection === '${sectionToScroll}' ? 'nav_selection_indicator_selected' : 'nav_selection_indicator'`> 
         <img src={iconPath} class="item_icon"/>
     </div>
     <p class="item_label">{label}</p>
 </div>
+
+<script>
+    window.scrollToSection = function(sectionId: string) {
+        const element = document.getElementById(sectionId);
+
+        if (!element) { return }
+
+        if (sectionId === "about_me_section_id") {
+            window.scrollTo({
+                top: 0,
+                behavior: "auto"
+            })
+        } else {
+            const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - 70
+            window.scrollTo({
+                top: elementPosition,
+                behavior: "auto"
+            })
+        }
+    }
+</script>

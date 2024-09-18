@@ -4,7 +4,7 @@ import NavRailItem from "./NavRailItem.astro"
 import ThemeModeItem from "./ThemeModeItem.astro"
 ---
 
-<div class="nav_rail_container">
+<div class="nav_rail_container" x-data="navRail">
     <nav class="nav_rail">
         <div class="nav_profile_info_container">
             <img src="/images/tmp_avatar.jpg" class="profile_img"/>
@@ -16,11 +16,11 @@ import ThemeModeItem from "./ThemeModeItem.astro"
 
         <div class="nav_item_divider"></div>
 
-        <NavRailItem iconPath="/images/ic_about_me.svg" label="About Me"/>
-        <NavRailItem iconPath="/images/ic_experience.svg" label="Experience"/>
-        <NavRailItem iconPath="/images/ic_skills.svg" label="Skills"/>
-        <NavRailItem iconPath="/images/ic_projects.svg" label="Projects"/>
-        <NavRailItem iconPath="/images/ic_contact.svg" label="Contact"/>
+        <NavRailItem iconPath="/images/ic_about_me.svg" label="About Me" sectionToScroll="about_me_section_id"/>
+        <NavRailItem iconPath="/images/ic_experience.svg" label="Experience" sectionToScroll="experience_section_id"/>
+        <NavRailItem iconPath="/images/ic_skills.svg" label="Skills" sectionToScroll="skills_section_id"/>
+        <NavRailItem iconPath="/images/ic_projects.svg" label="Projects" sectionToScroll="projects_section_id"/>
+        <NavRailItem iconPath="/images/ic_contact.svg" label="Contact" sectionToScroll="contact_section_id"/>
 
         <ThemeModeItem/>
 
@@ -30,3 +30,37 @@ import ThemeModeItem from "./ThemeModeItem.astro"
 
     </nav>
 </div>
+
+<script>
+    window.navRail = function() {
+        return {
+            selectedSection: "about_me_section_id",
+            init() {
+                const sections = ["about_me_section_id", "experience_section_id", "skills_section_id", "projects_section_id", "contact_section_id"]
+
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '-50% 0px -50% 0px',
+                    threshorld: 0
+                }
+
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {                            
+                            this.selectedSection = entry.target.id;
+                        }
+                    });
+                }, observerOptions);
+
+                sections.forEach(sectionId => {
+                    const element = document.getElementById(sectionId);
+                    if (element) {
+                        observer.observe(element);
+                    }
+                });
+            },
+
+        }
+    }
+
+</script>

@@ -6,9 +6,17 @@ import "../styles/email_actions.css"
     <p class="email">cariasdaniel261@gmail.com</p>
 
     <div class="actions_container">
-        <img src="/images/ic_copy.svg" class="copy_icon"/>
+        <img src="/images/ic_copy.svg" class="copy_icon" x-on:click="copyEmail(); isDisplaySnackBar = true; setTimeout(() => isDisplaySnackBar = false, 2000);"/>
         <div class="actions_divider"></div>
         <img src="/images/ic_send.svg" class="send_icon"/>
     </div>
 
 </div>
+
+<script>
+    import ClipboardJS from "clipboard";
+
+    window.copyEmail = function() {
+        ClipboardJS.copy("cariasdaniel261@gmail.com");
+    }
+</script>

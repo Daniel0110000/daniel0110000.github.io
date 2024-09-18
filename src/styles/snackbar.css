@@ -1,0 +1,27 @@
+.snackbar {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: var(--color-secondary);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);   
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.snack_message {
+    color: var(--color-text-primary);
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+@media screen and (max-width: 1100px) {
+    .snackbar {
+        margin-bottom: 70px;
+    }
+}

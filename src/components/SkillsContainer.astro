@@ -24,7 +24,7 @@ import SkillCard from "./SkillCard.astro";
     <div class="skills">
         {
             skills.map((skill) => (
-                <SkillCard skillTitle={skill.label}/>
+                <SkillCard skillTitle={skill.label} skillIcon={skill.iconPath}/>
             ))
         }
     </div>

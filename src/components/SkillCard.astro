@@ -1,14 +1,15 @@
 ---
 interface Props {
-    skillTitle: string
+    skillTitle: string,
+    skillIcon: string
 }
 
-const {skillTitle} = Astro.props as Props;
+const {skillTitle, skillIcon} = Astro.props as Props;
 
 import "../styles/skill_card.css"
 ---
 
 <div class="skill_card">
-    <img src="/images/ic_kotlin.webp" class="skill_icon"/>
+    <img src={skillIcon} class="skill_icon"/>
     <p class="skill_title">{skillTitle}</p>
 </div>

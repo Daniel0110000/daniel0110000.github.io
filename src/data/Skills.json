@@ -1,58 +1,78 @@
 {
     "languages": [
-        { "label": "Kotlin", "iconPath": ""},
-        { "label": "Java", "iconPath": ""},
-        { "label": "C++", "iconPath": ""},
-        { "label": "Rust", "iconPath": ""},
-        { "label": "Kotlin", "iconPath": ""},
-        { "label": "Java", "iconPath": ""},
-        { "label": "C++", "iconPath": ""},
-        { "label": "Rust", "iconPath": ""},
-        { "label": "C++", "iconPath": ""},
-        { "label": "Rust", "iconPath": ""}
+        { "label": "Kotlin", "iconPath": "/images/skills/ic_kotlin.webp" },
+        { "label": "Java", "iconPath": "/images/skills/ic_java.webp" },
+        { "label": "C", "iconPath": "/images/skills/ic_c.webp" },
+        { "label": "C++", "iconPath": "/images/skills/ic_cpp.webp" },
+        { "label": "Rust", "iconPath": "/images/skills/ic_rust.webp" },
+        { "label": "Assembly x86", "iconPath": "/images/skills/ic_assembly.webp" },
+        { "label": "Bash", "iconPath": "/images/skills/ic_bash.webp" },
+        { "label": "JavaScript", "iconPath": "/images/skills/ic_js.webp" },
+        { "label": "TypeScript", "iconPath": "/images/skills/ic_typescript.webp" },
+        { "label": "C#", "iconPath": "/images/skills/ic_cs.webp" },
+        { "label": "Python", "iconPath": "/images/skills/ic_python.webp" }
     ],
     "frameworks": [
-        { "label": "Jetpack Compose", "iconPath": ""},
-        { "label": "Angular", "iconPath": ""},
-        { "label": "Spring Boot", "iconPath": ""},
-        { "label": "Swing", "iconPath": ""},
-        { "label": "Spring Boot", "iconPath": ""},
-        { "label": "Swing", "iconPath": ""}
+        { "label": "Jetpack Compose", "iconPath": "/images/skills/ic_jetpack_compose.webp"},
+        { "label": "Angular", "iconPath": "/images/skills/ic_angular.webp"},
+        { "label": "Spring Boot", "iconPath": "/images/skills/ic_spring_boot.webp"},
+        { "label": "Ktor", "iconPath": "/images/skills/ic_ktor.webp" },
+        { "label": "NodeJs", "iconPath": "/images/skills/ic_node.webp" },
+        { "label": "Astro", "iconPath": "/images/skills/ic_astro.webp" },
+        { "label": "Swing", "iconPath": "/images/skills/ic_java.webp" }
     ],
     "databases": [
-        { "label": "Firebase", "iconPath": ""},
-        { "label": "MySQL", "iconPath": ""},
-        { "label": "SQLite", "iconPath": ""}
+        { "label": "Firebase", "iconPath": "/images/skills/ic_firebase.webp"},
+        { "label": "MySQL", "iconPath": "/images/skills/ic_mysql.webp"},
+        { "label": "SQLite", "iconPath": "/images/skills/ic_sqlite.webp"}
     ],
     "dev_tools": [
-        { "label": "Git", "iconPath": ""},
-        { "label": "Github", "iconPath": ""},
-        { "label": "NPM", "iconPath": ""}
+        { "label": "Git", "iconPath": "/images/skills/ic_git.webp"},
+        { "label": "Github", "iconPath": "/images/skills/ic_github.webp"},
+        { "label": "Gradle", "iconPath": "/images/skills/ic_gradle.webp"},
+        { "label": "npm", "iconPath": "/images/skills/ic_npm.webp"}
     ],
     "ides": [
-        { "label": "Android Studio", "iconPath": ""},
-        { "label": "VS Code", "iconPath": ""},
-        { "label": "Neovim", "iconPath": ""},
-        { "label": "VS Code", "iconPath": ""},
-        { "label": "Neovim", "iconPath": ""}
+        { "label": "Android Studio", "iconPath": "/images/skills/ic_android_studio.webp"},
+        { "label": "Intellij Idea", "iconPath": "/images/skills/ic_intellij.webp"},
+        { "label": "Neovim", "iconPath": "/images/skills/ic_nvim.webp"},
+        { "label": "VS Code", "iconPath": "/images/skills/ic_vs.webp"},
+        { "label": "Netbeans", "iconPath": "/images/skills/ic_netbeans.webp"}
     ],
     "design_tools": [
-        { "label": "Figma", "iconPath": ""},
-        { "label": "Canva", "iconPath": ""},
-        { "label": "Blender", "iconPath": ""}
+        { "label": "Figma", "iconPath": "/images/skills/ic_figma.webp"},
+        { "label": "Blender", "iconPath": "/images/skills/ic_blender.webp"}
     ],
     "android_libraries": [
+        { "label": "Dagger Hilt", "iconPath": ""},
+        { "label": "Koin", "iconPath": ""},
         { "label": "Retrofit", "iconPath": ""},
         { "label": "Volley", "iconPath": ""},
-        { "label": "ROOM", "iconPath": ""},
+        { "label": "Ktor Client" },
+        { "label": "Room", "iconPath": ""},
+        { "label": "Sqldeligh", "iconPath": ""},
+        { "label": "Flow", "iconPath": ""},
+        { "label": "LiveData / ViewModel", "iconPath": ""},
+        { "label": "Coroutines", "iconPath": ""},
+        { "label": "Glide", "iconPath": ""},
+        { "label": "Picasso", "iconPath": ""},
+        { "label": "OkHttp", "iconPath": ""},
+        { "label": "JUnit4", "iconPath": ""},
+        { "label": "JUnit5", "iconPath": ""},
+        { "label": "Mockito", "iconPath": ""},
         { "label": "Mockk", "iconPath": ""},
-        { "label": "Retrofit", "iconPath": ""},
-        { "label": "Volley", "iconPath": ""},
-        { "label": "ROOM", "iconPath": ""},
-        { "label": "Mockk", "iconPath": ""},
-        { "label": "Retrofit", "iconPath": ""},
-        { "label": "Volley", "iconPath": ""},
-        { "label": "ROOM", "iconPath": ""},
-        { "label": "Mockk", "iconPath": ""}
+        { "label": "Espresso", "iconPath": ""},
+        { "label": "Gson", "iconPath": ""},
+        { "label": "Realm", "iconPath": ""},
+        { "label": "WorkManager", "iconPath": ""},
+        { "label": "Glance", "iconPath": ""},
+        { "label": "Services", "iconPath": ""},
+        { "label": "Broadcast", "iconPath": ""},
+        { "label": "Remote Config", "iconPath": ""},
+        { "label": "Crashlytics", "iconPath": ""},
+        { "label": "Push Notifications", "iconPath": ""},
+        { "label": "Paging 3", "iconPath": "" },
+        { "label": "Navigation", "iconPath": "" },
+        { "label": "KMM", "iconPath": "" }
     ]
 }

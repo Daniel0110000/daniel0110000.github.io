@@ -7,7 +7,6 @@
     border-radius: 8px;
     background: var(--color-secondary);
     border: 1px solid var(--color-border);
-    cursor: pointer;
     margin-top: 10px;
 }
 

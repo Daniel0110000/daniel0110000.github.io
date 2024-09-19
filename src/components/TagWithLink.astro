@@ -1,0 +1,16 @@
+---
+interface Props {
+    tag_icon: string,
+    tag_label: string,
+    link: string
+}
+
+const {tag_icon, tag_label, link} = Astro.props;
+
+import "../styles/tag.css"
+---
+
+<a class="tag" href={link} target="_blank">
+    <img src={tag_icon} class="tag_icon"/>
+    <p class="tag_title">{tag_label}</p>
+</a>

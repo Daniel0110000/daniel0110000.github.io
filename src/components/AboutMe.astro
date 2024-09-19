@@ -3,6 +3,7 @@ import "../styles/about_me.css"
 import DownloadCV from "./DownloadCV.astro";
 import EmailActions from "./EmailActions.astro";
 import Tag from "./Tag.astro";
+import TagWithLink from "./TagWithLink.astro";
 ---
 
 <section class="about_me_section" id="about_me_section_id">
@@ -22,8 +23,8 @@ import Tag from "./Tag.astro";
 
     <div class="tags_container">
         <Tag tag_icon="/images/ic_location.svg" tag_label="Guatemala"/>
-        <Tag tag_icon="/images/ic_github.svg" tag_label="Daniel0110000"/>
-        <Tag tag_icon="/images/ic_linkedin.svg" tag_label="Daniel Blas"/>
+        <TagWithLink tag_icon="/images/ic_github.svg" tag_label="Daniel0110000" link="https://github.com/Daniel0110000"/>
+        <TagWithLink tag_icon="/images/ic_linkedin.svg" tag_label="Daniel Blas" link="https://www.linkedin.com/in/daniel01100"/>
     </div>
 
     <DownloadCV/>

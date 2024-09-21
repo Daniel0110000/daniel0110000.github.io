@@ -1,14 +1,13 @@
 ---
 interface Skill {
-    label: string,
-    iconPath: string
+    label: string
 }
 
 interface Props {
     skills: Skill[]
 }
 
-const {skills} = Astro.props;
+const { skills } = Astro.props;
 
 import Tag from "./Tag.astro";
 import "../styles/skills_android_libs.css"

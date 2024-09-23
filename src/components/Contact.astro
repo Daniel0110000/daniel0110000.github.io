@@ -23,23 +23,24 @@ import SectionHeader from "./SectionHeader.astro"
                 </div>
             </div>
         </div>
-        <div class="contact_form_container">
+        <form class="contact_form_container" id="contact_form" method="post" action="https://formspree.io/f/mqazvpvq">
             <div class="name_and_email_container">
                 <div class="name_form_container">
                     <p class="contact_label">Name</p>
-                    <input type="text" class="name_input" placeholder="Dr10">
+                    <input type="text" class="name_input" id="name_input" placeholder="Dr10">
                 </div>
                 <div class="name_form_container">
                     <p class="contact_label">Email</p>
-                    <input type="text" class="name_input" placeholder="dr10@gmail.com">
+                    <input type="email" class="name_input" id="email_input" placeholder="dr10@gmail.com">
                 </div>
             </div>
 
             <p class="message_label">Message</p>
-            <textarea class="message_input" placeholder="..."/>
+            <textarea class="message_input" id="message_input" placeholder="..."/>
 
             <button class="send_button">Send Message</button>
 
-        </div>
+        </form>
     </div>
 </section>
+<script src="../scripts/Contact.ts"></script>

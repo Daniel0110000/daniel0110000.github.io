@@ -1,0 +1,142 @@
+[
+    {
+        "companyLogoPath": "/images/experience/freelancer.svg",
+        "title": "Freelancer · Android Developer",
+        "date": "December 2022 - Current",
+        "description": "Over the past few years, I have been working as a freelance developer and on personal projects. Most of the work I have done has been Android projects, but I have also worked on web and desktop projects using various technologies.",
+        "technologiesUsed": [ 
+            {
+                "iconPath": "/images/experience/ic_kotlin.svg",
+                "name": "Kotlin"
+            },
+            {
+                "iconPath": "/images/experience/ic_java.svg",
+                "name": "Java"
+            },
+            {
+                "iconPath": "/images/experience/ic_cpp.svg",
+                "name": "C++"
+            },
+            {
+                "iconPath": "/images/experience/ic_rust.svg",
+                "name": "Rust"
+            },
+            {
+                "iconPath": "/images/experience/ic_ts.svg",
+                "name": "TypeScript"
+            },
+            {
+                "iconPath": "/images/experience/ic_java.svg",
+                "name": "Swing"
+            },
+            {
+                "iconPath": "/images/experience/ic_jetpack.svg",
+                "name": "Compose"
+            }
+        ]
+    },
+    {
+        "companyLogoPath": "/images/experience/vicos.webp",
+        "title": "Vico's Painting Concepts · Web Developer",
+        "date": "June 2022 - November 2022",
+        "description": "For five months, I was responsible for maintaining the company's website. During this time, continuous monitoring and code optimization were carried out to enhance the user experience. Additionally, various bugs that arose during the process were fixed.",
+        "technologiesUsed": [ 
+            {
+                "iconPath": "/images/experience/ic_html.svg",
+                "name": "HTMl"
+            },
+            {
+                "iconPath": "/images/experience/ic_css.svg",
+                "name": "CSS"
+            },
+            {
+                "iconPath": "/images/experience/ic_js.svg",
+                "name": "JS"
+            },
+            {
+                "iconPath": "/images/experience/ic_bootstrap.svg",
+                "name": "Bootstrap"
+            },
+            {
+                "iconPath": "/images/experience/ic_node.svg",
+                "name": "Node JS"
+            },
+            {
+                "iconPath": "/images/experience/ic_mysql.svg",
+                "name": "MySQL"
+            } 
+        ]
+    },
+    {
+        "companyLogoPath": "/images/experience/vicos.webp",
+        "title": "Vico's Painting Concepts · Web Developer",
+        "date": "March 2022 - June 2022",
+        "description": "Development of a website designed to facilitate efficient and quick communication between users and the company for hiring their painting services. The necessary tests were conducted to ensure the website's stability and proper functionality.",
+        "technologiesUsed": [ 
+            {
+                "iconPath": "/images/experience/ic_html.svg",
+                "name": "HTMl"
+            },
+            {
+                "iconPath": "/images/experience/ic_css.svg",
+                "name": "CSS"
+            },
+            {
+                "iconPath": "/images/experience/ic_js.svg",
+                "name": "JS"
+            },
+            {
+                "iconPath": "/images/experience/ic_bootstrap.svg",
+                "name": "Bootstrap"
+            },
+            {
+                "iconPath": "/images/experience/ic_node.svg",
+                "name": "Node JS"
+            },
+            {
+                "iconPath": "/images/experience/ic_mysql.svg",
+                "name": "MySQL"
+            } 
+        ]
+    },
+    {
+        "companyLogoPath": "/images/experience/sky_one.webp",
+        "title": "SkyOne Group · Android Developer",
+        "date": "January 2022 - February 2022",
+        "description": "Migration of an application developed in Java to Kotlin, enhancing its functionalities and implementing the MVVM architecture to make the code more maintainable and scalable. Additionally, extensive testing was conducted to ensure proper functionality, as well as to assess the application's security and performance.",
+        "technologiesUsed": [ 
+            {
+                "iconPath": "/images/experience/ic_java.svg",
+                "name": "Java"
+            },
+            {
+                "iconPath": "/images/experience/ic_kotlin.svg",
+                "name": "Kotlin"
+            },
+            {
+                "iconPath": "/images/experience/ic_xml.svg",
+                "name": "XML"
+            } 
+        ]
+    },
+    {
+        "companyLogoPath": "/images/experience/sky_one.webp",
+        "title": "SkyOne Group · Web Developer",
+        "date": "November 2021 - January 2022",
+        "description": "Development of a website for purchasing subscriptions for an entertainment app, using PayPal as the primary payment method. Extensive testing was conducted to ensure the site's stability, security, and functionality. This allowed users to quickly and securely complete their subscription purchases.",
+        "technologiesUsed": [ 
+            {
+                "iconPath": "/images/experience/ic_html.svg",
+                "name": "HTML"
+            },
+            {
+                "iconPath": "/images/experience/ic_css.svg",
+                "name": "CSS"
+            },
+            {
+                "iconPath": "/images/experience/ic_js.svg",
+                "name": "JS"
+            } 
+        ]
+    }
+]

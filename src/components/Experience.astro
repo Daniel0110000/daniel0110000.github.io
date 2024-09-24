@@ -2,15 +2,17 @@
 import "../styles/experience.css"
 import ExperienceCard from "./ExperienceCard.astro"
 import SectionHeader from "./SectionHeader.astro"
+import ExperienceData from "../data/Experience.json"
 ---
 
 <section class="experience_section" id="experience_section_id">
     <SectionHeader icon_path="/images/ic_experience_s.svg" title="Experience"/>
     
     <div class="experience_container">
-        <ExperienceCard/>
-        <ExperienceCard/>
-        <ExperienceCard/>
-        <ExperienceCard/>
+        {
+            ExperienceData.map(exp => (
+                <ExperienceCard experience={exp}/>
+            ))
+        }
     </div>
 </section>

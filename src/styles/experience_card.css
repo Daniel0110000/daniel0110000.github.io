@@ -1,29 +1,31 @@
 .experience_card {
     width: 320px;
-    height: 300px;
+    height: 260px;
     border-radius: 15px;
     background: var(--color-secondary);
     border: 1px solid var(--color-border);
     padding: 15px;
 }
 
-.company_icon {
+.company_logo {
     height: 40px;
+    border-radius: 10px;
 }
 
 .header_card {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
-.name_time_container {
+.title_time_container {
     display: flex;
     flex-direction: column;
     margin-left: 5px;
 }
 
-.company_name {
-    font-size: 17px;
+.title {
+    font-size: 15px;
     color: var(--color-text-secondary);
     font-weight: bold;
 }
@@ -34,25 +36,22 @@
 }
 
 .card_sub_title {
-    font-size: 16px;
+    font-size: 14px;
     color: var(--color-text-secondary);
     font-weight: bold;
     margin-top: 10px;
-    margin-left: 10px;
 }
 
 .sub_title_description {
     font-size: 14px;
     color: var(--color-text-primary);
     margin-top: 2px;
-    margin-left: 10px;
 }
 
 .tech_used_container {
     display: flex;
     flex-direction: row;
     gap: 5px;
-    margin-left: 10px;
     margin-top: 10px;
 }
 

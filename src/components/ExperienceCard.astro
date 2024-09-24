@@ -1,30 +1,47 @@
 ---
+interface TechnologiesUsed {
+    iconPath: string,
+    name: string
+}
+
+interface Experience {
+    companyLogoPath: string,
+    title: string,
+    date: string,
+    description: string,
+    technologiesUsed: TechnologiesUsed[]
+}
+
+interface Props {
+    experience: Experience
+}
+
+const { experience } = Astro.props;
+
 import "../styles/experience_card.css"
 import CardTech from "./CardTech.astro"
 ---
 
 <div class="experience_card">
     <div class="header_card">
-        <img src="/images/skyOne.webp" class="company_icon"/>
-        <div class="name_time_container">
-            <p class="company_name">SkyOne Group</p>
-            <p class="time_in_company">Jun 2021 - Sep 2022</p>
+        <img src={ experience.companyLogoPath } class="company_logo"/>
+        <div class="title_time_container">
+            <p class="title">{ experience.title }</p>
+            <p class="time_in_company">{ experience.date }</p>
         </div>
     </div>
     
     <p class="card_sub_title">Description</p>
-    <p class="sub_title_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aliquid facilis sapiente laborum inventore nesciunt cupiditate ab deserunt reprehenderit assumenda.</p>
-
-    <p class="card_sub_title">Goals</p>
-    <p class="sub_title_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aliquid facilis sapiente laborum inventore nesciunt cupiditate ab deserunt reprehenderit assumenda.</p>
+    <p class="sub_title_description">{ experience.description }</p>
 
     <p class="card_sub_title">Technologies used</p>
 
     <div class="tech_used_container">
-        <CardTech iconPath="/images/ic_css.svg" label="HTML"/>
-        <CardTech iconPath="/images/ic_css.svg" label="CSS"/>
-        <CardTech iconPath="/images/ic_java.svg" label="JS"/>
-        <CardTech iconPath="/images/ic_java.svg" label="Java"/>
+        {
+            experience.technologiesUsed.map(tech => (
+                <CardTech iconPath={tech.iconPath} label={tech.name} />
+            ))
+        }
     </div>
 
 </div>

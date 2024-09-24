@@ -4,15 +4,16 @@
 ::-webkit-scrollbar {
     width: 8px;
 }
-
+  
+::-webkit-scrollbar-track {
+    background-color: var(--color-primary);
+}
+  
 ::-webkit-scrollbar-thumb {
-    background: rgba(#ABB2BF, 0.3);
-    border-radius: 10px;
+    background-color: var(--color-scrollbar);
+    border-radius: 5px;
 }
-
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(#ABB2BF, 0.6);
-}
+  
 
 body {
     background-color: var(--color-primary);
@@ -29,11 +30,4 @@ p {
 
 a {
     text-decoration: none;
-}
-
-.snackbar {
-    --mdc-snackbar-container-color: var(--color-secondary);
-    --mdc-snackbar-supporting-text-color: var(--color-text-primary);
-    --mdc-snackbar-supporting-text-font: "Roboto";
-    --mdc-snackbar-supporting-text-size: 15px
 }

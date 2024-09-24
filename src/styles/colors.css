@@ -11,6 +11,7 @@
     --color-text-secondary: #000000;
     --color-actions: #e5e7eb;
     --color-actions-divider: #CED0D4;
+    --color-scrollbar: #BCC0C4;
 }
 
 [data-theme="dark"] {
@@ -26,4 +27,5 @@
     --color-text-secondary: #FFFFFF;
     --color-actions: rgb(31, 33, 37);
     --color-actions-divider: rgba(255, 255, 255, 0.1);
+    --color-scrollbar: rgb(31, 33, 37);
 }

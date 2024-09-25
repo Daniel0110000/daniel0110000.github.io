@@ -6,9 +6,10 @@ interface TechnologiesUsed {
 
 interface Experience {
     companyLogoPath: string,
-    title: string,
+    role: string,
+    companyName: string,
     date: string,
-    description: string,
+    descriptions: string[],
     technologiesUsed: TechnologiesUsed[]
 }
 
@@ -19,29 +20,38 @@ interface Props {
 const { experience } = Astro.props;
 
 import "../styles/experience_card.css"
-import CardTech from "./CardTech.astro"
 ---
 
 <div class="experience_card">
     <div class="header_card">
-        <img src={ experience.companyLogoPath } class="company_logo"/>
+        <div class="company_logo_container">
+            <img src={ experience.companyLogoPath } class="company_logo">
+        </div>
         <div class="title_time_container">
-            <p class="title">{ experience.title }</p>
+            <p class="company_role">{ experience.role }</p>
+            <p class="company_name">{ experience.companyName }</p>
             <p class="time_in_company">{ experience.date }</p>
         </div>
     </div>
-    
-    <p class="card_sub_title">Description</p>
-    <p class="sub_title_description">{ experience.description }</p>
 
-    <p class="card_sub_title">Technologies used</p>
+    <ul class="role_description">
+        {
+            experience.descriptions.map( description => (
+                <li>{ description }</li>
+            ) )
+        }
+    </ul>
 
     <div class="tech_used_container">
         {
             experience.technologiesUsed.map(tech => (
-                <CardTech iconPath={tech.iconPath} label={tech.name} />
+                <div class="tech_tag">
+                    <img src={ tech.iconPath } class="tech_icon">
+                    <p class="tech_name">{ tech.name }</p>
+                </div>
             ))
         }
+        
     </div>
 
 </div>

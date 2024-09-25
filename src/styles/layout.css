@@ -24,7 +24,7 @@ body {
     padding: 0px;
 }
 
-p {
+p, ul {
     font-family: "Roboto";
 }
 

@@ -1,14 +1,25 @@
 .experience_card {
-    width: 320px;
-    height: 260px;
+    width: 350px;
+    height: 250px;
     border-radius: 15px;
     background: var(--color-secondary);
     border: 1px solid var(--color-border);
     padding: 15px;
 }
 
+.company_logo_container {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-actions);
+    border-radius: 7px;
+}
+
 .company_logo {
-    height: 40px;
+    height: 30px;
     border-radius: 10px;
 }
 
@@ -24,35 +35,57 @@
     margin-left: 5px;
 }
 
-.title {
-    font-size: 15px;
+.company_role {
+    font-size: 17px;
     color: var(--color-text-secondary);
     font-weight: bold;
+}
+
+.company_name {
+    font-size: 15px;
+    color: var(--color-text-primary);
 }
 
 .time_in_company {
-    font-size: 13px;
+    font-size: 11px;
     color: var(--color-text-primary);
 }
 
-.card_sub_title {
-    font-size: 14px;
-    color: var(--color-text-secondary);
-    font-weight: bold;
+.role_description {
+    font-size: 13.5px;
+    color: var(--color-text-primary);
     margin-top: 10px;
-}
-
-.sub_title_description {
-    font-size: 14px;
-    color: var(--color-text-primary);
-    margin-top: 2px;
+    margin-left: 18px;
 }
 
 .tech_used_container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 5px;
     margin-top: 10px;
+}
+
+.tech_tag {
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: var(--color-actions);
+    border-radius: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.tech_icon {
+    width: 16px;
+    height: 16px;
+}
+
+.tech_name {
+    color: var(--color-text-primary);
+    font-size: 13px;
+    margin-left: 5px;
 }
 
 @media screen and (max-width: 1240px) {

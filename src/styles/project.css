@@ -5,6 +5,7 @@
     flex-direction: column;
     border-radius: 10px;
     background: var(--color-secondary);
+    transition: transform 0.3s ease-in;
 }
 
 .project_screeshot {
@@ -92,4 +93,9 @@
     .project_actions {
         width: 90%;
     }
+}
+
+/* Animations */
+.project_card:hover {
+    transform: translate(0px, -10px);
 }

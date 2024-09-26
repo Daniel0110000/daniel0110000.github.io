@@ -9,6 +9,7 @@
     background: var(--color-secondary);
     border: 1px solid var(--color-border);
     margin-top: 10px;
+    transition: transform 0.3s ease-in;
 }
 
 .skill_icon {
@@ -38,4 +39,9 @@
     .skill_title {
         font-size: 12px;
     }
+}
+
+/* Animations */
+.skill_card:hover {
+    transform: translate(0px, -10px);
 }

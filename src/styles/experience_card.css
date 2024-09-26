@@ -5,6 +5,7 @@
     background: var(--color-secondary);
     border: 1px solid var(--color-border);
     padding: 15px;
+    transition: transform 0.3s ease-in;
 }
 
 .company_logo_container {
@@ -93,4 +94,9 @@
         width: 100%;
         height: max-content;
     }
+}
+
+/* Animations */
+.experience_card:hover {
+    transform: translate(0px, -10px);
 }

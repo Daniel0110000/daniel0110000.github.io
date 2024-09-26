@@ -10,6 +10,10 @@
     padding-right: 10px;
 }
 
+.tag_with_anim {
+    transition: transform 0.2s ease-in;
+}
+
 .tag_icon {
     width: 20px;
     height: 20px;
@@ -19,4 +23,9 @@
     color: var(--color-text-primary);
     margin-left: 5px;
     font-size: 15px;
+}
+
+/* Animations */
+.tag_with_anim:hover {
+    transform: translate(0px, -5px);
 }

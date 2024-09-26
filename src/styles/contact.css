@@ -48,7 +48,9 @@
     width: 11px;
     height: 11px;
     background: var(--color-complementary);
-    border-radius: 50%;}
+    border-radius: 50%;
+    animation: pulse 1.5s ease-in-out infinite;
+}
 
 .status_label {
     color: var(--color-text-secondary);
@@ -212,4 +214,17 @@
         margin-top: 15px;
     }
 
+}
+
+/* Animations */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
 }

@@ -6,10 +6,10 @@ interface Props {
 
 const {iconPath, label} = Astro.props;
 
-import "../styles/card_tech.css"
+import "../styles/tech_card.css"
 ---
 
-<div class="card_tech">
+<div class="tech_card">
     <img src={iconPath} class="tech_icon"/>
     <p class="tech_name">{label}</p>
 </div>

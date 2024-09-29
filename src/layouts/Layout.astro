@@ -7,39 +7,10 @@ import "../styles/layout.css"
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr10</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <title>Daniel Blas</title>
 </head>
 <body>
     <slot></slot>
-    
-    <script>
-        const themeToggeles = document.querySelectorAll('.switch input[type="checkbox"], .theme_toggle') as NodeListOf<HTMLInputElement>;
-        const currentTheme = localStorage.getItem("theme");
-
-        function setTheme(theme: string) {
-            document.documentElement.setAttribute("data-theme", theme);
-            localStorage.setItem("theme", theme);
-
-            themeToggeles.forEach(toggle => {
-                toggle.checked = theme == "dark";
-            })
-        }
-    
-        if (currentTheme) {
-            setTheme(currentTheme);
-        } else {
-            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-            const defaultTheme = prefersDarkScheme.matches ? "dark" : "light";
-            setTheme(defaultTheme);
-        }
-
-        themeToggeles.forEach(toggle => {
-            toggle.addEventListener("change", (e: Event) => {
-                const target = e.target as HTMLInputElement;
-                const newTheme = target.checked ? "dark" : "light";
-                setTheme(newTheme);
-            });
-        });
-    </script>
 </body>
 </html>

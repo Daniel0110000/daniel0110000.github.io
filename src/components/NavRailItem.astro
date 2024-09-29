@@ -16,24 +16,3 @@ import "../styles/nav_rail_item.css"
     </div>
     <p class="item_label">{label}</p>
 </div>
-
-<script>
-    window.scrollToSection = function(sectionId: string) {
-        const element = document.getElementById(sectionId);
-
-        if (!element) { return }
-
-        if (sectionId === "about_me_section_id") {
-            window.scrollTo({
-                top: 0,
-                behavior: "auto"
-            })
-        } else {
-            const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - 70
-            window.scrollTo({
-                top: elementPosition,
-                behavior: "auto"
-            })
-        }
-    }
-</script>

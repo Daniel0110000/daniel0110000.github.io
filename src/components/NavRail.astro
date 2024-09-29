@@ -1,7 +1,7 @@
 ---
 import "../styles/nav_rail.css"
 import NavRailItem from "./NavRailItem.astro"
-import ThemeModeItem from "./ThemeModeItem.astro"
+import ThemeModeItem from "./ThemeToggle.astro"
 ---
 
 <div class="nav_rail_container" x-data="navRail">
@@ -32,35 +32,64 @@ import ThemeModeItem from "./ThemeModeItem.astro"
 </div>
 
 <script>
-    window.navRail = function() {
-        return {
-            selectedSection: "about_me_section_id",
-            init() {
-                const sections = ["about_me_section_id", "experience_section_id", "skills_section_id", "projects_section_id", "contact_section_id"]
 
-                const observerOptions = {
-                    root: null,
-                    rootMargin: '-50% 0px -50% 0px',
-                    threshorld: 0
-                }
+import Alpine from "alpinejs";
 
-                const observer = new IntersectionObserver((entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {                            
-                            this.selectedSection = entry.target.id;
+class NavRail {
+
+    constructor(){ this.init(); }
+
+    init() {
+        document.addEventListener("alpine:init", () => {
+            Alpine.data("navRail", () => ({
+                selectedSection: "about_me_section_id",
+                init() {
+                    const sections = ["about_me_section_id", "experience_section_id", "skills_section_id", "projects_section_id", "contact_section_id"]
+
+                    const observerOptions = {
+                        root: null,
+                        rootMargin: '-50% 0px -50% 0px',
+                        threshold: 0
+                    }
+
+                    const observer = new IntersectionObserver((entries) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {                            
+                                this.selectedSection = entry.target.id;
+                            }
+                        });
+                    }, observerOptions);
+
+                    sections.forEach(sectionId => {
+                        const element = document.getElementById(sectionId);
+                        if (element) {
+                            observer.observe(element);
                         }
                     });
-                }, observerOptions);
-
-                sections.forEach(sectionId => {
+                },
+                scrollToSection(sectionId: string) {
                     const element = document.getElementById(sectionId);
-                    if (element) {
-                        observer.observe(element);
-                    }
-                });
-            },
 
-        }
+                    if (!element) { return }
+
+                    if (sectionId === "about_me_section_id") {
+                        window.scrollTo({
+                            top: 0,
+                            behavior: "auto"
+                        })
+                    } else {
+                        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset - 70
+                        window.scrollTo({
+                            top: elementPosition,
+                            behavior: "auto"
+                        })
+                    }
+                }
+            }));
+        });
     }
+}
+
+new NavRail();
 
 </script>
